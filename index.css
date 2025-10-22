@@ -1,0 +1,61 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  padding: 0;
+  height: 100%;
+}
+
+#calctop {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin-bottom: 10px;
+}
+
+#calctop div { 
+  border: 3px black solid;
+}
+
+#equationtile {
+  flex: 0.5 0 auto;
+}
+
+#typetile {
+  flex: 1 0 auto;
+}
+
+#calcbody {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  flex: 1 0 auto;
+}
+
+#calcbody div { 
+  border: 3px black solid;
+  margin: 10px;
+  flex: 1 0 auto;
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0;
+}
+
+#equaltile {
+  grid-column: 5;
+  grid-row: 4 / 6;
+}
