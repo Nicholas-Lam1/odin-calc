@@ -138,6 +138,10 @@ function handleInput(e) {
       if(equation.firstInput === '') {
         equation.firstInput = currentInput;
       }
+      else if(equation.secondInput !== '') {
+        equation.firstInput = currentInput;
+        equation.secondInput = '';
+      }
       currentInput = '';
       updateDisplay();
       break;
